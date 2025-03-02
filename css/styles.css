@@ -5,37 +5,181 @@ body {
 /* 👇👇👇 Paste the styles of your Fancy Robot from the "Position it right" assignment here 👇👇👇 */
 
 .robot-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 .robot-face-shape {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  margin: 190px auto;
+  padding: 80px;
+  border: 20px solid cyan;
+  border-radius: 60px;
+  background: linear-gradient(to right, #23334d, #6e9ce6);
 }
 
 .robot-eye-left {
+  height: 30%;
+  width: 40%;
+  background: url("https://picsum.photos/seed/picsum/200/300");
+  border-radius: 10% / 50%;
+  animation: eye-left 1s ease-in-out 0.5s infinite alternate;
 }
 
 .robot-eye-right {
+  position: relative;
+  height: 30px;
+  width: 140px;
+  background: #143d61;
+  margin: -60px 0px 0px 350px;
+  opacity: 50%;
+  animation: eye-right 3s linear 0.5s infinite;
 }
 
 .robot-ear-left {
+  position: absolute;
+  top: 50%;
+  left: 170px;
+  border-right: 100px solid transparent;
+  border-top: 100px solid red;
+  border-left: 100px solid red;
+  border-bottom: 100px solid red;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  animation: ear-left 1s ease-in-out 0.5s infinite alternate;
 }
 
 .robot-ear-right {
+  position: absolute;
+  top: 50%;
+  right: 170px;
+  border-right: 100px solid Violet;
+  border-top: 100px solid Violet;
+  border-left: 100px solid transparent;
+  border-bottom: 100px solid Violet;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  animation: ear-right 1s ease-in-out 0.5s infinite alternate;
 }
 
 .robot-nose {
+  --s: 50px; /* control the shape (can be percentage) */
+  height: 6rem;
+  width: 5rem;
+  clip-path: polygon(
+    100% 0,
+    calc(100% - var(--s)) 0,
+    0 50%,
+    calc(100% - var(--s)) 100%,
+    100% 100%,
+    var(--s) 50%
+  );
+  background: Orange;
+  margin: 90px auto;
+  transition: all 1s ease-in-out;
 }
 
-.robot-nose:before {
-}
-
-.robot-nose:after {
+.robot-nose:hover {
+  transform: rotate(30deg);
 }
 
 .robot-teeth {
+  height: 60px;
+  width: 300px;
+  margin-left: 100px;
+  overflow: hidden;
+  border-radius: 20%;
 }
 
 .robot-tooth {
+  position: relative;
+  height: 25px;
+  width: 43px;
+  background: white;
+  margin-bottom: 10px;
+  animation: tooth 0.1s ease-in-out infinite alternate;
 }
 
 .robot-hair-style {
+  position: absolute;
+  top: 13%;
+  left: 33.5%;
+  height: 80px;
+  width: 500px;
+  animation: robot-hair-style 1s linear 0.5s infinite;
+}
+
+.robot-hair-one {
+  height: 30px;
+  width: 50px;
+  background: green;
+  position: absolute;
+  top: 50px;
+  left: 35px;
+  animation: robot-hair-one 1s ease-in-out 0.5s infinite alternate;
+}
+
+.robot-hair-style div:nth-child(4) {
+  left: 335px;
+}
+
+.robot-hair-style div:nth-child(5) {
+  left: 435px;
+}
+
+.robot-hair-two {
+  height: 50px;
+  width: 50px;
+  background: orange;
+  position: absolute;
+  top: 30px;
+  left: 135px;
+  animation: robot-hair-two 1s ease-in-out 0.5s infinite alternate;
+}
+
+.robot-hair-three {
+  height: 70px;
+  width: 50px;
+  background: pink;
+  position: absolute;
+  top: 10px;
+  left: 235px;
+  animation: robot-hair-three 1s ease-in-out 0.5s infinite alternate;
+}
+
+.robot-tooth:nth-child(3),
+.robot-tooth:nth-child(4) {
+  top: -70px;
+  left: 51px;
+}
+
+.robot-tooth:nth-child(5),
+.robot-tooth:nth-child(6) {
+  top: -140px;
+  left: 102px;
+}
+
+.robot-tooth:nth-child(7),
+.robot-tooth:nth-child(8) {
+  top: -210px;
+  left: 153px;
+}
+
+.robot-tooth:nth-child(9),
+.robot-tooth:nth-child(10) {
+  top: -280px;
+  left: 204px;
+}
+
+.robot-tooth:nth-child(11),
+.robot-tooth:nth-child(12) {
+  top: -350px;
+  left: 255px;
 }

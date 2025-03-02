@@ -1,0 +1,116 @@
+@keyframes eye-left {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes eye-right {
+  0% {
+    bottom: 0;
+    left: 0;
+  }
+  25% {
+    bottom: 70px;
+    left: 0;
+    background-color: aqua;
+  }
+  50% {
+    bottom: 70px;
+    left: 70px;
+    background-color: yellow;
+  }
+  75% {
+    bottom: 0;
+    left: 70px;
+    background-color: blueviolet;
+  }
+  100% {
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@keyframes ear-right {
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(100deg);
+  }
+}
+
+@keyframes ear-left {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes tooth {
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes robot-hair-style {
+  0% {
+    transform: translateX(-30px);
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes robot-hair-one {
+  0% {
+    transform: scaleY(0.5);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0.5);
+  }
+}
+
+@keyframes robot-hair-two {
+  0% {
+    transform: scaleY(0.5);
+  }
+  50% {
+    transform: scaleY(1.5);
+  }
+  100% {
+    transform: scaleY(0.5);
+  }
+}
+
+@keyframes robot-hair-three {
+  0% {
+    transform: scaleY(0.5);
+  }
+  50% {
+    transform: scaleY(1.5);
+  }
+  100% {
+    transform: scaleY(0.5);
+  }
+}
